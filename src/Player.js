@@ -4,7 +4,7 @@ import { useCardProvider } from './CardProvider';
 
 export default function Player({ player, hand }) {
   const {
-    cards, setFrom, selectedCard, setSelectedCard, setTo, to
+    setFrom, selectedCard, setSelectedCard, setTo, to
   } = useCardProvider();
   
   return (

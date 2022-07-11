@@ -1,7 +1,11 @@
 import React from 'react';
 import Card from './Card';
+import { useCardProvider } from './CardProvider';
 
-export default function CardList({ cards, setSelectedCard, player, setFrom, selectedCard }) {
+export default function CardList({ cards, player }) {
+  const {
+    setSelectedCard, setFrom, selectedCard
+  } = useCardProvider();
   return (
     <div className='card-list'>
       {

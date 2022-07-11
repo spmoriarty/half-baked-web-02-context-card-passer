@@ -5,6 +5,7 @@ import CardList from './CardList';
 import { useState } from 'react';
 import ExecutePassButton from './ExecutePassButton';
 import { useCardProvider } from './CardProvider';
+import { findCardIndex } from './fetch-utils';
 
 
 
@@ -17,9 +18,8 @@ function App() {
   const [from, setFrom] = useState('deck');
   const [to, setTo] = useState(1);
 
-  function findCardIndex(value, suit, cards) {
-    return cards.findIndex(card => card.value === value && card.suit === suit);
-  }
+
+
 
   function passCard(card) {
     const playerHands = [playerOneHand, playerTwoHand, playerThreeHand];
