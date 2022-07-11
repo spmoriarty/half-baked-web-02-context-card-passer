@@ -11,7 +11,8 @@ import { useCardProvider } from './CardProvider';
 
 function App() {
   
-  const { deck,
+  const { 
+    deck,
     playerOneHand, 
     selectedCard, setSelectedCard,
     playerTwoHand, 

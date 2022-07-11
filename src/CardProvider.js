@@ -19,7 +19,6 @@ export function CardProvider({ children }) {
 
 
   const allState = {
-    
     deck, setDeck,
     playerOneHand, setPlayerOneHand,
     selectedCard, setSelectedCard,
