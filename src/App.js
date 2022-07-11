@@ -4,6 +4,9 @@ import Player from './Player';
 import CardList from './CardList';
 import { useState } from 'react';
 import ExecutePassButton from './ExecutePassButton';
+import { useCardProvider } from './CardProvider';
+
+
 
 function App() {
   const [deck, setDeck] = useState(initialCards);

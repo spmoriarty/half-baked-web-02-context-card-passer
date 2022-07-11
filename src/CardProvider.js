@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from 'react';
+import initialCards from './cards-data';
 
 const CardContext = createContext();
 
@@ -29,7 +30,7 @@ export function CardProvider({ children }) {
 
   };
 
-  return <CardContext.Provider>
+  return <CardContext.Provider value={allState}>
     {children}
   </CardContext.Provider>;
 }
